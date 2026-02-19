@@ -4,8 +4,31 @@ Command-line pipeline for comparing input query proteins and the human reference
 
 ## Installation
 
+Install Git LFS (required for IEDB dataset)
+
+# Ubuntu
+```bash
+sudo apt install git-lfs
+
+# Mac
+brew install git-lfs
+
+# Windows
+https://git-lfs.github.com/
+```
+
+Initialize Git LFS:
+
+```bash
+git lfs install
+```
+
+Clone repository:
+
 ```bash
 git clone https://github.com/yuchen2614/MME_Web_Tool_CLI.git
+cd MME_Web_Tool_CLI
+git lfs pull
 ```
 
 ## Environment setting
