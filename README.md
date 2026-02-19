@@ -32,9 +32,10 @@ git lfs pull
 ```
 
 ## Environment setting
+Python 3.11+ (3.11.4 3.12.3 tested)
 
 ```bash
-Python 3.12.3 (tested)
+
 pip install -r requirements.txt
 ```
 
