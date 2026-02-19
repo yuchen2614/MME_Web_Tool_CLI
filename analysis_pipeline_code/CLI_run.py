@@ -23,7 +23,7 @@ if __name__ == "__main__":
         if not job_dir.exists():
             break   # ✅ 找到不重複 ID
     print(f"✅ 自動產生唯一 job_id: {job_id}")
-    job_dir.mkdir(exist_ok=False)
+    job_dir.mkdir(parents=True, exist_ok=True)
 
 
     # === 正式分析流程 ===
