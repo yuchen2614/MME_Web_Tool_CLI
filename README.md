@@ -34,7 +34,7 @@ git lfs pull
 ## Environment setting
 
 ```bash
-cd MME_Web_Tool_CLI
+Python 3.12.3 (tested)
 pip install -r requirements.txt
 ```
 
