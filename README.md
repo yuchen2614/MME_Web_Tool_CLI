@@ -32,7 +32,7 @@ git lfs pull
 ```
 
 ## Environment setting
-Python 3.11+ (3.11.4 3.12.3 tested)
+recommand Python 3.11+ ( 3.11.4 & 3.12.3 tested )
 
 ```bash
 
