@@ -1,0 +1,37 @@
+# Configuration File for MME Web Tool CLI - Perfect_Match & Blastp Module
+# 1. Change parameters in this file. 
+# 2. Make terminal location to see "MME_Web_Tool_CLI" folder.
+# 3. Then use terminal command "python -m MME_Web_Tool_CLI.analysis_pipeline_code.CLI_run" to run the analysis. 
+
+# Matching Logic 程式會根據Matching_Logic讀下方對應區塊
+Matching_Logic: "Perfect_Match"  # choose from "Perfect_Match" or "Blastp" 
+
+
+# Perfect_match Part
+perfect_match_paths: #路徑可使用絕對路徑，或相對於 CLI 執行目錄(如預設)
+    human_fasta_path: "MME_Web_Tool_CLI/static/reference/human_20663.fasta" #(預設) default(do not change)
+    query_fasta_path: "MME_Web_Tool_CLI/static/query/example.fasta" #使用者更動
+    IEDB_file_path: "MME_Web_Tool_CLI/static/IEDB/IEDB_human_correct.csv" #(預設) default(do not change)
+    human_protein_detail_path: "MME_Web_Tool_CLI/static/human_protein_detail/proteinAtlas_OMIM_UniprotID_HGNC.csv" #(預設) default(do not change)
+
+perfect_match_parameters:
+    kmer_perfect_match: 6
+
+
+# Blastp Part
+blastp_paths: #路徑可使用絕對路徑，或相對於 CLI 執行目錄(如預設)
+    human_db_path: "MME_Web_Tool_CLI/static/reference/Blastp_human_20663_db/human_db" #(預設) default(do not change)
+    query_fasta_path: "MME_Web_Tool_CLI/static/query/example.fasta" #使用者更動
+    IEDB_file_path: "MME_Web_Tool_CLI/static/IEDB/IEDB_human_correct.csv" #(預設) default(do not change)
+    human_protein_detail_path: "MME_Web_Tool_CLI/static/human_protein_detail/proteinAtlas_OMIM_UniprotID_HGNC.csv" #(預設) default(do not change)
+
+blastp_parameters:
+    evalue: 100
+    matrix: "BLOSUM62"
+    gap: 0
+    kmer_blastp: 20
+    min_length: 6
+    max_length: 20
+    identity: 70
+    positive: 80
+    gap_num: 5
