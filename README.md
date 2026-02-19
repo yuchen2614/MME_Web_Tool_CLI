@@ -6,8 +6,8 @@ Command-line pipeline for comparing input query proteins and the human reference
 
 Install Git LFS (required for IEDB dataset)
 
-# Ubuntu
 ```bash
+# Ubuntu
 sudo apt install git-lfs
 
 # Mac
